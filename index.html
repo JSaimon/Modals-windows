@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Modal Windows</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttonMenu" id="buttonMenu">
+      <button class="button modal1" onclick="CreateModalWindow()">
+        Show modal 1
+      </button>
+      <button class="button modal2" onclick="CreateModalWindow()">
+        Show modal 2
+      </button>
+      <button class="button modal3" onclick="CreateModalWindow()">
+        Show modal 3
+      </button>
+    </div>
+
+    <div class="modalWindow hidden" id="modalWindow">
+      <div class="modalWindowContent">
+        <button class="cross" onclick="HideModalContainer()">&times;</button>
+        <h2 class="modalWindowTitle">I'm a modal window</h2>
+        <p class="modalWindowText">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam,
+          et iusto! Temporibus, ratione a aliquam amet itaque neque doloribus
+          natus at iste dicta, voluptatibus earum placeat tempore necessitatibus
+          fugit dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Suscipit, reiciendis unde. Nesciunt illum nostrum optio aliquam
+          tempora temporibus saepe eveniet laboriosam alias nulla commodi
+          explicabo voluptatum quidem neque, officiis suscipit.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="overlay hidden"
+      id="overlay"
+      onclick="HideModalContainer()"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
